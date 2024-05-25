@@ -16,15 +16,15 @@ import (
 	"syscall"
 	"time"
 
-	proxynetutil "github.com/AdguardTeam/dnsproxy/internal/netutil"
-	"github.com/AdguardTeam/dnsproxy/internal/version"
-	"github.com/AdguardTeam/dnsproxy/proxy"
-	"github.com/AdguardTeam/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/AdguardTeam/golibs/osutil"
 	"github.com/AdguardTeam/golibs/timeutil"
 	"github.com/ameshkov/dnscrypt/v2"
+	proxynetutil "github.com/bruceluk/dnsproxy/internal/netutil"
+	"github.com/bruceluk/dnsproxy/internal/version"
+	"github.com/bruceluk/dnsproxy/proxy"
+	"github.com/bruceluk/dnsproxy/upstream"
 	goFlags "github.com/jessevdk/go-flags"
 	"gopkg.in/yaml.v3"
 )
@@ -220,7 +220,7 @@ func main() {
 		// TODO(e.burkov, a.garipov):  Use flag package and remove the manual
 		// options parsing.
 		//
-		// See https://github.com/AdguardTeam/dnsproxy/issues/182.
+		// See https://github.com/bruceluk/dnsproxy/issues/182.
 		if len(arg) > 13 {
 			if arg[:13] == "--config-path" {
 				fmt.Printf("Path: %s\n", arg[14:])

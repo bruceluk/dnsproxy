@@ -6,11 +6,11 @@ import (
 	"net"
 	"net/netip"
 
-	proxynetutil "github.com/AdguardTeam/dnsproxy/internal/netutil"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/AdguardTeam/golibs/syncutil"
+	proxynetutil "github.com/bruceluk/dnsproxy/internal/netutil"
 	"github.com/miekg/dns"
 )
 

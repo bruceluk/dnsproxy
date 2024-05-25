@@ -15,15 +15,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/fastip"
-	proxynetutil "github.com/AdguardTeam/dnsproxy/internal/netutil"
-	"github.com/AdguardTeam/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/AdguardTeam/golibs/service"
 	"github.com/AdguardTeam/golibs/syncutil"
 	"github.com/ameshkov/dnscrypt/v2"
+	"github.com/bruceluk/dnsproxy/fastip"
+	proxynetutil "github.com/bruceluk/dnsproxy/internal/netutil"
+	"github.com/bruceluk/dnsproxy/upstream"
 	"github.com/miekg/dns"
 	gocache "github.com/patrickmn/go-cache"
 	"github.com/quic-go/quic-go"
@@ -757,7 +757,7 @@ func (p *Proxy) cacheWorks(dctx *DNSContext) (ok bool) {
 		// cache cannot be used because different upstreams can return different
 		// results.
 		//
-		// See https://github.com/AdguardTeam/dnsproxy/issues/169.
+		// See https://github.com/bruceluk/dnsproxy/issues/169.
 		//
 		// TODO(e.burkov):  It probably should be decided after resolve.
 		reason = "custom upstreams cache is not configured"

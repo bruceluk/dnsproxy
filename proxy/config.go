@@ -8,11 +8,11 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/ameshkov/dnscrypt/v2"
+	"github.com/bruceluk/dnsproxy/upstream"
 )
 
 // UpstreamModeType - upstream mode

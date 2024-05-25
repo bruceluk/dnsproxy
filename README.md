@@ -1,6 +1,6 @@
-[![Code Coverage](https://img.shields.io/codecov/c/github/AdguardTeam/dnsproxy/master.svg)](https://codecov.io/github/AdguardTeam/dnsproxy?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/AdguardTeam/dnsproxy)](https://goreportcard.com/report/AdguardTeam/dnsproxy)
-[![Go Doc](https://godoc.org/github.com/AdguardTeam/dnsproxy?status.svg)](https://godoc.org/github.com/AdguardTeam/dnsproxy)
+[![Code Coverage](https://img.shields.io/codecov/c/github/bruceluk/dnsproxy/master.svg)](https://codecov.io/github/bruceluk/dnsproxy?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bruceluk/dnsproxy)](https://goreportcard.com/report/bruceluk/dnsproxy)
+[![Go Doc](https://godoc.org/github.com/bruceluk/dnsproxy?status.svg)](https://godoc.org/github.com/bruceluk/dnsproxy)
 
 # DNS Proxy <!-- omit in toc -->
 
@@ -30,7 +30,7 @@ There are several options how to install `dnsproxy`.
 2. Use the [official Docker image][docker].
 3. Build it yourself (see the instruction below).
 
-[releases]: https://github.com/AdguardTeam/dnsproxy/releases
+[releases]: https://github.com/bruceluk/dnsproxy/releases
 [docker]: https://hub.docker.com/r/adguard/dnsproxy
 
 ## How to build

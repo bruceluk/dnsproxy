@@ -1,4 +1,4 @@
-module github.com/AdguardTeam/dnsproxy/internal/tools
+module github.com/bruceluk/dnsproxy/internal/tools
 
 go 1.22.3
 

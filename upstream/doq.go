@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/proxyutil"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/bruceluk/dnsproxy/proxyutil"
 	"github.com/miekg/dns"
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"
@@ -464,7 +464,7 @@ func isQUICRetryError(err error) (ok bool) {
 		// server when it considers that it's time to close the connection.
 		// For example, Google DNS eventually closes an active connection with
 		// the NO_ERROR code and "Connection max age expired" message:
-		// https://github.com/AdguardTeam/dnsproxy/issues/283
+		// https://github.com/bruceluk/dnsproxy/issues/283
 		return true
 	}
 
